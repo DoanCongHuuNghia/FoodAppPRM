@@ -29,8 +29,8 @@ import java.util.Locale;
 
 public class ChatFragment extends Fragment {
     private static final String TAG = "ChatFragment";
-    private static final String SERVER_IP = "172.16.1.5"; // Update this to your server's IP
-    private static final int SERVER_PORT = 8000;
+    private static final String SERVER_IP = "172.16.1.15"; // Update this to your server's IP
+    private static final int SERVER_PORT = 8080;
 
     private RecyclerView recyclerView;
     private EditText editTextMessage;
@@ -67,7 +67,7 @@ public class ChatFragment extends Fragment {
         sendButton.setOnClickListener(v -> {
             String message = editTextMessage.getText().toString();
             if (!message.isEmpty() && out != null) {
-                String sender = nameOfUser; // Set the sender name as needed
+                String sender = nameOfUser;
                 String time = getCurrentTime();
                 String fullMessage = sender + "|" + message + "|" + time;
                 new Thread(() -> {

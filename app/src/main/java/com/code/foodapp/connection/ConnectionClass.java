@@ -10,7 +10,7 @@ public class ConnectionClass {
 
     String classes = "net.sourceforge.jtds.jdbc.Driver";
 
-    protected static String ip = "192.168.1.2"; //IP wifi
+    protected static String ip = "10.13.4.192"; //IP wifi
     protected static String port = "1433";
     protected static String db = "FoodApp";
     protected static String un = "sa";

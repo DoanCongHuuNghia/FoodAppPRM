@@ -78,6 +78,7 @@ public class MyCartFragment extends Fragment {
                     orderDetails.append(cart.getQuantity())
                             .append(" x ")
                             .append(cart.getName())
+                            .append("\n")
                             .append("\n");
                     orderPrices.append(String.format("$%.1f", Double.parseDouble(cart.getPrice())))
                             .append("\n")

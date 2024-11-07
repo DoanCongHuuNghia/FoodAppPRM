@@ -43,7 +43,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         Double price = Double.parseDouble(list.get(position).getPrice()) * list.get(position).getQuantity();
         holder.price.setText(String.valueOf(price));
         holder.rating.setText(list.get(position).getRating());
-        holder.quantity.setText(list.get(position).getQuantity());
+        holder.quantity.setText(String.valueOf(cart.getQuantity()));
     }
 
     @Override

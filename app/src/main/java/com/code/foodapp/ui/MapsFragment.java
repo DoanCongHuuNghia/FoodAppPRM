@@ -156,9 +156,9 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLng fptCityDaNang = new LatLng(16.001224, 108.251953); // Tọa độ của Khu đô thị FPT City
-        mMap.addMarker(new MarkerOptions().position(fptCityDaNang).title("Khu đô thị FPT City, Ngũ Hành Sơn, Đà Nẵng"));
-        float zoomLevel = 10.0f;
+        LatLng fptCityDaNang = new LatLng(15.969148912518747, 108.26090738885486);
+        mMap.addMarker(new MarkerOptions().position(fptCityDaNang).title("Đà Nẵng"));
+        float zoomLevel = 15.0f;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(fptCityDaNang, zoomLevel));
 
         // Cấu hình các cài đặt của bản đồ
